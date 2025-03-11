@@ -96,14 +96,14 @@ body.theme-green .sidebar {
 
 /* Red Theme */
 body.theme-red {
-  background: #ffebee;
-  color: #b71c1c;
+  background: #ffffff;
+  color: #ff9595;
 }
 body.theme-red header {
-  background: linear-gradient(135deg, #ef5350, #e53935);
+  background: linear-gradient(135deg, #ef5090, #e53564);
 }
 body.theme-red .sidebar {
-  background: linear-gradient(180deg, #f55757, #d32f2f);
+  background: linear-gradient(180deg, #aa2828, #760202);
   color: #ffebee;
 }
 
@@ -213,6 +213,7 @@ body.theme-red .sidebar {
   animation: gradientPulse 8s ease infinite;
   letter-spacing: 2px;
   font-weight: 700;
+  font-size: 70px;
 }
 
 /* Header */
@@ -220,12 +221,14 @@ header {
   display: flex; 
   align-items: center;
   justify-content: space-between;
+  gap: 30px; /* Adjust the gap value as needed */
   background: linear-gradient(135deg, #1aa4ff, #0d6efd); 
   color: #ffffff;
-  padding: 20px 25px; 
+  padding: 30px 35px; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   position: relative;
   overflow: hidden;
+  
 }
 
 header::after {
@@ -250,8 +253,8 @@ header h1 {
 }
 
 header #toggleMode {
-  width: 45px; 
-  height: 45px; 
+  width: 50px; 
+  height: 50px; 
   border: none;
   border-radius: 50%; 
   cursor: pointer; 
@@ -418,7 +421,7 @@ select {
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   background: #f9fafb;
-  color: #374151;
+  color: #42526c;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -642,12 +645,13 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: #5d5d5d; }
       <h2>Menu</h2>
       <ul>
         <li onclick="openSidebarOverlay('historyOverlay')">History</li>
-        <li onclick="openSidebarOverlay('otherTestOverlay')">Other Test (Coming Soon)</li>
+        <li onclick="openSidebarOverlay('otherTestOverlay')">Games (Still making)</li>
         <li onclick="openSidebarOverlay('aiOverlay')">AI Analysis (Coming Soon)</li>
         <li onclick="openSidebarOverlay('userDataOverlay')">User Data</li>
         <li onclick="openSidebarOverlay('settingsOverlay')">Settings</li>
         
         <li onclick="window.location.href='samplewiki.html'">Wiki</li> <!-- New Wiki Tab -->
+        <li onclick="window.location.href='piechart.html'">Our Data Survey</li> <!-- New Our Data Tab -->
       </ul>
     </div>
     
@@ -656,11 +660,19 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: #5d5d5d; }
       <!-- Header with Wavy Text -->
       <header>
         <header>
-          <h1 class="wavy-text">Stress Analysis App</h1>
-          
+          <h1 class="wavy-text">PEACFUL
+          </h1>
         </header>
-        <button id="toggleMode" onclick="toggleDarkMode()">☾</button>
+        <h3 style="font-size: 30px;color: #a1dbff;">Calm Mind, Happy Life</h3>
+        <div style="display: flex; gap: 5px;">
+          <button id="toggleMode" onclick="toggleDarkMode()">☾</button>
+          <button id="toggleMode" onclick="window.location.href='newtestbar.html'">::</button>
+          <button id="toggleMode" onclick="window.location.href='pie maer.html'">;;</button>
+        </div>
+        
+        
       </header>
+      
       
       <!-- Content Area: Left = Results, Right = Data Entry -->
       <div class="content-area">
@@ -823,13 +835,13 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover { background: #5d5d5d; }
           <button type="button" onclick="closeSidebarOverlay()">Back</button>
         </div>
         <div id="otherTestOverlay" class="sidebar-overlay">
-          <h2>Other Test (Coming Soon)</h2>
-          <p>This section will include additional tests in the future.</p>
+          <h2>Games</h2>
+          <button style="font-size: 50px;display: inline-block;" onclick="window.location.href='gameselect.html'">Games</button>
           <button type="button" onclick="closeSidebarOverlay()">Back</button>
         </div>
         <div id="aiOverlay" class="sidebar-overlay">
           <h2>AI Analysis (Coming Soon)</h2>
-          <button style="font-size: 50px;display: inline-block;" onclick="window.location.href='dowload file/ai.html'">AI</button>
+          <button style="font-size: 50px;display: inline-block;" onclick="window.location.href='new.html'">AI</button>
           <button type="button" onclick="closeSidebarOverlay()">Back</button>
         </div>
         <!-- User Data Overlay -->
